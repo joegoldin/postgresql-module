@@ -7,8 +7,10 @@
     [Documentation](https://garnix.io/docs/modules/postgresql) - [Source](https://github.com/garnix-io/postgresql-module).
   '';
 
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
+
   outputs =
-    { self }:
+    { self, nixpkgs }:
     {
       garnixModules.default =
         {
